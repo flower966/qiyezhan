@@ -1,0 +1,205 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-02-20 21:18:52
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-02-20 22:30:51
+*/
+@import url("base.css");
+@font-face {
+  font-family: 'iconfont';  /* project id 570135 */
+  src: url('http://at.alicdn.com/t/font_570135_lissdvfkqgfx0f6r.eot');
+  src: url('http://at.alicdn.com/t/font_570135_lissdvfkqgfx0f6r.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_570135_lissdvfkqgfx0f6r.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_570135_lissdvfkqgfx0f6r.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_570135_lissdvfkqgfx0f6r.svg#iconfont') format('svg');
+}
+.iconfont
+{
+	font-family:'iconfont';
+}
+i
+{
+	font-style: normal;
+}
+.top{
+	/* width: 100%; */
+	height: 90px;
+	background: #000;
+	overflow: hidden;
+}
+.top1{
+	/* width: 1246px; */
+	height: 40px;
+	background: #000;
+	margin-top: 24px;
+	text-align: center;
+}
+.logo{
+	width: 220px;
+	height: 40px;
+	float: left;
+	margin-left: 50px;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.max_nav{
+	/* width: 610px; */
+	height: 100%;
+	background: #000;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+}
+.max_nav li a{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	line-height: 44px;
+	text-decoration: none;
+} 
+.max_nav li a:nth-child(4){
+	color: #ccc;
+}
+.max_nav li a:hover{
+	color: #ccc;
+}
+/* 小屏 */
+.min_top{
+	/* width: 100%; */
+	height: 90px;
+	background: #000;
+	overflow: hidden;
+}
+.min_top1{
+	/* width: 1246px; */
+	height: 40px;
+    background: #000;
+    margin: 24px auto;
+}
+.logo1{
+	width: 220px;
+	height: 40px;
+	margin: 0 auto;
+}
+.about{
+	padding: 80px 0;
+	background: #000;
+}
+.about_top{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.about_top h1{
+	font-size: 24px;
+	color: #c2c2c2;
+	text-align: center;
+	font-weight: 700;
+}
+.about_top p{
+	font-size: 14px;
+	line-height: 22px;
+	color: #7D7D7D;
+	text-align: center;
+}
+.about_con{
+	margin-top: 50px;
+	border-bottom: 1px solid #3F3F3F;
+}
+.about_con p{
+	font-size: 14px;
+	color: #808080;
+}
+.about_img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+}
+.about_text p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #808080;
+	margin-top: 80px;
+}
+@media screen and (min-width: 1024px) {
+	.top{
+		width: 100%;
+		display: block;
+	}
+	.top1{
+		max-width: 1300px;
+	}
+	.max_nav{
+		width: 610px;
+	}
+	.min_top{
+		display: none;
+	}
+	.news h1{
+		top: 70px;
+		font-size: 24px;
+	}
+	.news h2{
+		top: 120px;
+		font-size: 20px;
+	}
+	.bottom{
+		width: 100%;
+	}
+	.bottom1{
+		max-width: 1280px;
+	}
+	.kuang{
+		width: 268px;
+	}
+	/* .list{
+		max-width: 890px;
+		float: right;
+	} */
+}
+/* 768px-1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.top{
+		max-width: 976px;
+		display: block;
+	}
+	.top1{
+		max-width: 1024px;
+		padding: 0 20px;
+	}
+	.max_nav{
+		width: 410px;
+	}
+	.min_top{
+		display: none;
+	}
+	.news h1{
+		top: 30px;
+		font-size: 20px;
+	}
+	.news h2{
+		top: 80px;
+		font-size: 18px;
+	}
+	.bottom{
+		max-width: 976px;
+	}
+	.bottom1{
+		max-width: 976px;
+	}
+	.kuang{
+		width: 268px;
+		margin-left: 50px;
+	}
+}
+/* <768px */
+@media screen and (max-width: 768px) {
+	.top{
+		display: none;
+	}
+    .min_top{
+    	display: block;
+    }
+}

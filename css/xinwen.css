@@ -1,0 +1,275 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-02-11 20:43:30
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-03-08 23:02:03
+*/
+@import url("base.css");
+@font-face {
+  font-family: 'iconfont';  /* project id 569562 */
+  src: url('//at.alicdn.com/t/font_569562_krzdazuvxq5dygb9.eot');
+  src: url('//at.alicdn.com/t/font_569562_krzdazuvxq5dygb9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_569562_krzdazuvxq5dygb9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_569562_krzdazuvxq5dygb9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_569562_krzdazuvxq5dygb9.svg#iconfont') format('svg');
+}
+.iconfont
+{
+	font-family:'iconfont';
+}
+i
+{
+	font-style: normal;
+}
+.top{
+	/* width: 100%; */
+	height: 90px;
+	background: #000;
+	overflow: hidden;
+}
+.top1{
+	/* width: 1246px; */
+	height: 40px;
+	background: #000;
+	margin-top: 24px;
+	text-align: center;
+}
+.logo{
+	width: 220px;
+	height: 40px;
+	float: left;
+	margin-left: 50px;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.max_nav{
+	/* width: 610px; */
+	height: 100%;
+	background: #000;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+}
+.max_nav li a{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	line-height: 44px;
+	text-decoration: none;
+} 
+.max_nav li a:nth-child(4){
+	color: #ccc;
+}
+.max_nav li a:hover{
+	color: #ccc;
+}
+/* 小屏 */
+.min_top{
+	/* width: 100%; */
+	height: 90px;
+	background: #000;
+	overflow: hidden;
+}
+.min_top1{
+	/* width: 1246px; */
+	height: 40px;
+    background: #000;
+    margin: 24px auto;
+}
+.logo1{
+	width: 220px;
+	height: 40px;
+	margin: 0 auto;
+}
+/* 新闻 */
+.news{
+	width: 100%;
+	/* height: 217px; */
+	position: relative;
+	/* background-size: cover;
+    overflow: hidden; */
+}
+.news img{
+	width: 100%;
+	/* height: 100%; */
+}
+.news h1{
+	width: 100%;
+	/* font-size: 24px; */
+	font-weight: bold;
+	color: #ccc;
+	position: absolute;
+	/* top: 70px; */
+	left: auto;
+	right: auto;
+	text-align: center;
+}
+.news h2{
+	width: 100%;
+	/* font-size: 20px; */
+	color: #ccc;	
+	position: absolute;
+	/* top: 120px; */
+	left: auto;
+	right: auto;
+	text-align: center;
+}
+.bottom{
+	/* width: 1349px; */
+	height: 1000px;
+	background: #212121;
+}
+.bottom1{
+	/* width: 1280px; */
+	height: auto;
+	background: #212121;
+	margin: 0 auto;
+}
+.kuang{
+	/* width: 268px; */
+	height: 194px;
+	border: 1px solid #898989;
+	margin-top: 80px;
+}
+.kuang ul li{
+	margin-top: 30px;
+}
+.sanjiao{
+	width: 0px;
+    height: 0px;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #898989;
+    float: left;
+    margin-left: 20px;
+}
+.kuang ul li p{
+	margin-left: 50px;
+	font-size: 18px;
+	color: #898989;
+}
+.kuang ul li p:hover{
+	color: #fff;
+}
+.list li{
+	width: 888px;
+	height: 147px;
+	background: #212121;
+	/* margin-top: 80px; */
+}
+.list li:first-child{
+	margin-top: 80px;
+}
+.list li img{
+	width: 160px;
+	height: 100px;
+	margin-left: 15px;
+	float: left;
+}
+.list_right{
+	width: 688px;
+	height: 123px;
+	background: #212121;
+	float: right;
+}
+.biaoti{
+	font-size: 18px;
+	color: #C9C9C9;
+}
+.list_right p{
+	font-size: 12px;
+	color: #8C8C8C;
+	margin-top: 12px;
+}
+/* >1024px */
+@media screen and (min-width: 1024px) {
+	.top{
+		width: 100%;
+		display: block;
+	}
+	.top1{
+		max-width: 1300px;
+	}
+	.max_nav{
+		width: 610px;
+	}
+	.min_top{
+		display: none;
+	}
+	.news h1{
+		top: 70px;
+		font-size: 24px;
+	}
+	.news h2{
+		top: 120px;
+		font-size: 20px;
+	}
+	.bottom{
+		width: 100%;
+	}
+	.bottom1{
+		max-width: 1280px;
+	}
+	.kuang{
+		width: 268px;
+	}
+}
+/* 768px-1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.top{
+		max-width: 976px;
+		display: block;
+	}
+	.top1{
+		max-width: 1024px;
+		padding: 0 20px;
+	}
+	.max_nav{
+		width: 410px;
+	}
+	.min_top{
+		display: none;
+	}
+	.news h1{
+		top: 30px;
+		font-size: 20px;
+	}
+	.news h2{
+		top: 80px;
+		font-size: 18px;
+	}
+	.bottom{
+		max-width: 976px;
+	}
+	.bottom1{
+		max-width: 976px;
+	}
+	.kuang{
+		width: 268px;
+		margin-left: 50px;
+	}
+	
+}
+/* <768px */
+@media screen and (max-width: 768px) {
+	.top{
+		display: none;
+	}
+    .min_top{
+    	display: block;
+    }
+    .news h1{
+		top: 10px;
+		font-size: 18px;
+	}
+	.news h2{
+		top: 50px;
+		font-size: 16px;
+	}
+    .kuang{
+    	max-width: 268px;
+    	margin-left: 50px;
+    }
+}
