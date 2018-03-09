@@ -12,6 +12,10 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/animate.js"></script>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/swiper.min.js"></script>
 </head>
 <body>
 	<!-- 导航 -->
@@ -53,16 +57,48 @@
 	</header>
 	
 	<!-- banner -->
-	
-	<section class="banner">
-	        <h1>DISPLAY DESIGN CENTER</h1>
-	        <h2>Website templates</h2>
-	    	<!-- <ul class="lunbo">
-		 		<li></li>
-		 		<li></li>	  	
-	 		</ul> -->
-	</section>
-	
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<section class="banner">
+	                <img src="img/banner.jpg" alt="">
+	                <h1>DISPLAY DESIGN CENTER</h1>
+	                <h2>Website templates</h2>
+	            </section>
+			</div>
+			<div class="swiper-slide">
+				<section class="banner">
+	                <img src="img/2.jpg" alt="">
+	                <h1>DISPLAY DESIGN CENTER</h1>
+	                <h2>Website templates</h2>
+	            </section>
+			</div>
+			<div class="swiper-slide">
+				<section class="banner">
+	                <img src="img/banner.jpg" alt="">
+	                <h1>DISPLAY DESIGN CENTER</h1>
+	                <h2>Website templates</h2>
+	            </section>
+			</div>
+			<div class="swiper-slide">
+				<section class="banner">
+	                <img src="img/2.jpg" alt="">
+	                <h1>DISPLAY DESIGN CENTER</h1>
+	                <h2>Website templates</h2>
+	            </section>
+			</div>
+			<div class="swiper-slide">
+				<section class="banner">
+	                <img src="img/banner.jpg" alt="">
+	                <h1>DISPLAY DESIGN CENTER</h1>
+	                <h2>Website templates</h2>
+	            </section>
+			</div>
+		</div>
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+	</div>	
 <!-- 展厅设计方案 -->
 	<section class="about">
 		<div class="container">
@@ -180,3 +216,27 @@
 </section>
 </body>
 </html>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+    	spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+      // spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
